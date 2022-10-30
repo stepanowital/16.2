@@ -194,5 +194,5 @@ SQL -> GROUP BY ... (scalar)
 func -> count(User.id)
 """
 query = db.session.query(func.count(User.id)).join(Group).filter(Group.id == 1).group_by(Group.id)
-print(f"Запрос: {query}")
-print(f"Результат: {query.scalar()}")
+# print(f"Запрос: {query}")
+# print(f"Результат: {query.scalar()}")
